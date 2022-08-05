@@ -30,17 +30,10 @@
             "heading": "<p>New Arrivals<\/p>",
             "heading_size": "h1"
           }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -49,6 +42,11 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
+      }
+    },
+    "1659688233bafe873a": {
+      "type": "arrivals",
+      "settings": {
       }
     },
     "featured_collection": {
@@ -187,6 +185,7 @@
     "image_banner",
     "16596778743a4b79b9",
     "rich_text",
+    "1659688233bafe873a",
     "featured_collection",
     "collage",
     "video",
