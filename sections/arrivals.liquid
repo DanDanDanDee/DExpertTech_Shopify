@@ -1,0 +1,51 @@
+<section class="arrivals" id ="arrivals">
+    <div class = "Nav_Menu">
+        {{ "PLANT FAMILIES" }}{{ "GIFTS" }}{{ "FLOWERS" }}{{ "FEATURED PRODUCTS" }}
+    </div>
+    <div class = "new_arrivals">
+      {% for product in collections.NewArrivals.products %}
+       <div class = "container">
+        <img src = "{{ product.featured_image | img_url: 'medium' }}" alt = "New Arrivals">
+       <div class = "title">
+          {{ product.title }}</div>
+      <div class = "price">
+          {{ product.price }}</div>
+      </div>
+      {% endfor %}
+</div>
+</section>
+ 
+
+<style>
+    #arrivals .new_arrivals{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    #arrivals .container{
+        border: 1px solid #C1C1C1;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #arrivals .Nav_Menu{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+{% schema %}
+{
+    "name": "NewArrivals",
+    "settings": [],
+    "presets": [
+       {
+        "name": "NewArrivals"
+    }
+    ]
+}
+{% endschema %}
