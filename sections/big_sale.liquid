@@ -1,35 +1,66 @@
 <section class="big_sale" id ="big_sale">
     <div class = "bigsale_products">
       {% for product in collections.BigSale.products %}
-       <div class = "product">
-       {{ product.title }}</div>
-        <img src = "{{ product.featured_image | img_url: 'medium' }}">
+       <div class = "container">
+        <img src = "{{ product.featured_image | img_url: 'medium' }}" alt = "Big Sale">
+        <div class = "label">
+          {{ "Big Sale Products " }}</div>
+      <div class = "title">
+          {{ product.title }}</div>
+      <div class = "link_shopnow">
+          {{ "Shopnow" }}</div>
+      </div>
       {% endfor %}
 </div>
 </section>
+ 
 
 <style>
-  #bigsale_products{
+  .container {
     position: relative;
-    width: 301px;
-    height: 182px;
-    left: 100px;
-    top: 792px;
-  }
-  #product{
-    position: absolute;
-width: 116px;
-height: 62px;
-left: 121px;
-top: 852px;
-z-index: 9;
+    text-align: center;
+    color: black;
+    /*float: left;*/
+    width: 20%;
+    padding: 5rem 0;
+    display: inline-block;
+    margin-right: 1px;
+    align-items: center;
+    margin: auto;
 
-font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 31px;
   }
+
+  /* Top left text */
+.label {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+ 
+}
+
+/* Bottom left text */
+.link_shopnow{
+  position: absolute;
+  bottom: 55px;
+  left: 20px;
+ 
+}
+
+/* Centered text */
+.title {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  font-family: bold;
+  }
+  .bigsale_product{
+      display: flex;
+      align-items: center;
+      align: center;
+      margin: auto;
+    width: 500px;
+  }
+
 </style>
 
 {% schema %}
