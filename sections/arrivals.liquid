@@ -1,6 +1,9 @@
 <section class="arrivals" id ="arrivals">
     <div class = "Nav_Menu">
-        {{ "PLANT FAMILIES" }}{{ "GIFTS" }}{{ "FLOWERS" }}{{ "FEATURED PRODUCTS" }}
+        {{ "PLANT FAMILIES" }}
+        {{ "GIFTS" }}
+        {{ "FLOWERS" }}
+        {{ "FEATURED PRODUCTS" }}
     </div>
     <div class = "new_arrivals">
       {% for product in collections.NewArrivals.products %}
@@ -25,14 +28,12 @@
         margin-top: 5rem;
     }
     #arrivals .container{
-        border: 1px solid #C1C1C1;
         display: flex;
         flex-direction: column;
-        padding: 1rem;
+        padding: 1px;
     }
     #arrivals .Nav_Menu{
         display: flex;
-        gap: 1rem;
         justify-content: center;
         align-items: center;
     }
