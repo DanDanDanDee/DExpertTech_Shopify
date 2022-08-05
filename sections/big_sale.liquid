@@ -1,14 +1,35 @@
 <section class="big_sale" id ="big_sale">
     <div class = "bigsale_products">
-       
       {% for product in collections.BigSale.products %}
-        {{ product.title }}
+       <div class = "product">
+       {{ product.title }}</div>
         <img src = "{{ product.featured_image | img_url: 'medium' }}">
       {% endfor %}
 </div>
 </section>
 
 <style>
+  #bigsale_products{
+    position: relative;
+    width: 301px;
+    height: 182px;
+    left: 100px;
+    top: 792px;
+  }
+  #product{
+    position: absolute;
+width: 116px;
+height: 62px;
+left: 121px;
+top: 852px;
+z-index: 9;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 31px;
+  }
 </style>
 
 {% schema %}
