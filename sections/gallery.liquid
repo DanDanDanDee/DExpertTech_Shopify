@@ -1,0 +1,47 @@
+<section class="gallery" id ="gallery">
+    <div class = "heading">
+        {{ "OUR GALLERY" }}
+    </div>
+    <div class = "images">
+        <div class = "container">
+        <img src = "{{ https://cdn.shopify.com/s/files/1/0621/5817/6462/files/Rectangle_22.png?v=1659754408 | img_url: 'medium' }}" alt = "Gallery">
+        <img src = "{{ https://cdn.shopify.com/s/files/1/0621/5817/6462/files/Rectangle_23.png?v=1659754408 | img_url: 'medium' }}" alt = "Gallery">
+        <img src = "{{ https://cdn.shopify.com/s/files/1/0621/5817/6462/files/Rectangle_24.png?v=1659754408 | img_url: 'medium' }}" alt = "Gallery">
+        <img src = "{{ https://cdn.shopify.com/s/files/1/0621/5817/6462/files/Rectangle_25.png?v=1659754408 | img_url: 'medium' }}" alt = "Gallery">
+        <img src = "{{ https://cdn.shopify.com/s/files/1/0621/5817/6462/files/Rectangle_26.png?v=1659754408 | img_url: 'medium' }}" alt = "Gallery">
+        <img src = "{{ https://cdn.shopify.com/s/files/1/0621/5817/6462/files/Rectangle_27.png?v=1659754408 | img_url: 'medium' }}" alt = "Gallery">  
+    </div>
+  </div>
+</section>
+ 
+
+<style>
+    <style>
+        #gallery .images{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+        }
+        #gallery .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 1px;
+        }
+
+</style>
+
+{% schema %}
+{
+    "name": "Gallery",
+    "settings": [],
+    "presets": [
+       {
+        "name": "Our Gallery"
+    }
+    ]
+}
+{% endschema %}
