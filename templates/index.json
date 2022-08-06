@@ -49,6 +49,22 @@
       "settings": {
       }
     },
+    "16597451099872ea76": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_19.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -146,6 +162,7 @@
     "16596778743a4b79b9",
     "rich_text",
     "1659688233bafe873a",
+    "16597451099872ea76",
     "collage",
     "multicolumn"
   ]
